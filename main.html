@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppLoom - Sample Design Marketplace</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./styles/styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    
+    <!-- DNS prefetch for external domains -->
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//images.unsplash.com">
+    <link rel="dns-prefetch" href="//unpkg.com">
+    
+    <!-- Preconnect to font providers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+    <!-- Non-critical CSS with media attribute for faster loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Font Awesome with async loading -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></noscript>
+    
+    <!-- Meta tags for performance -->
+    <meta name="description" content="AppLoom - Professional landing page websites that convert visitors into customers. Custom web development services from concept to launch.">
+    <meta name="keywords" content="landing pages, web development, sample designs, responsive websites, conversion optimization">
+    <meta name="author" content="AppLoom">
+    
+    <!-- Optimize rendering -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMTIgMkwyMiAxMkwxMiAyMkwyIDEyTDEyIDJaIiBmaWxsPSIjM2I4MmY2Ii8+Cjwvc3ZnPgo=">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMTIgMkwyMiAxMkwxMiAyMkwyIDEyTDEyIDJaIiBmaWxsPSIjM2I4MmY2Ii8+Cjwvc3ZnPgo=">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="loader">
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+            </div>
+            <div class="preloader-text">
+                <div class="logo-container">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img src="./images/24.png" alt="Logo" width="280" height="48">
+                        </div>
+                    </div>
+                </div>
+                <p class="loading-text">Loading amazing designs...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img src="./images/24.png" alt="Logo" >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Navigation -->
+                <nav class="main-nav">
+                    <a href="#" class="nav-link">Product</a>
+                    <a href="#" class="nav-link">Teams</a>
+                    <a href="#" class="nav-link">Resources</a>
+                    <a href="#" class="nav-link">Community</a>
+                    <a href="#" class="nav-link">Help</a>
+                    <a href="#" class="nav-link">Enterprise</a>
+                    <a href="#" class="nav-link">Pricing</a>
+                </nav>
+
+                <!-- User Actions -->
+                <div class="user-actions">
+                    <a href="mailto:veloradigitalservices@gmail.com" class="contact-btn" title="Contact Us">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Secondary Navigation -->
+            <div class="secondary-nav">
+                <div class="secondary-nav-left">
+                    <a href="#templates" class="secondary-nav-link active">Sample Designs</a>
+                    <a href="#about" class="secondary-nav-link">About Us</a>
+                    <a href="#contact" class="secondary-nav-link">Contact</a>
+                </div>
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search sample designs..." id="searchInput">
+                        <button class="clear-search-btn" id="clearSearchBtn" style="display: none;">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" id="templates">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="#" class="breadcrumb-link">Marketplace</a>
+                <span class="breadcrumb-separator">></span>
+                <span class="breadcrumb-current" id="breadcrumbCurrent">All Sample Designs</span>
+            </nav>
+
+            <!-- Page Title -->
+            <h1 class="page-title" id="pageTitle">All Sample Designs</h1>
+
+            <!-- Filters -->
+            <!-- <div class="filters-section">
+                <div class="filters-left">
+                    <div class="filter-dropdown">
+                        <button class="filter-btn">
+                            <span>Type</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="filter-menu">
+                            <a href="#" class="filter-option">All Types</a>
+                            <a href="#" class="filter-option">Sample Designs</a>
+                            <a href="#" class="filter-option">Components</a>
+                            <a href="#" class="filter-option">Plugins</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters-right">
+                </div>
+            </div> -->
+
+            <!-- Template Grid -->
+            <div class="template-grid">
+                <!-- Sample Design Card 1 - Avanté - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/avante" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&auto=format&q=75" alt="Avanté Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Avanté</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sample Design Card 2 - Etec - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/etec" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop&auto=format&q=75" alt="Etec Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Etec</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sample Design Card 3 - Personalfolio - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/personalfolio" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=300&fit=crop&auto=format&q=75" alt="Personalfolio Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Personalfolio</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sample Design Card 4 - Dashfolio - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/dashfolio" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&auto=format&q=75" alt="Dashfolio Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Dashfolio</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sample Design Card 5 - Showu - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/showu" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop&auto=format&q=75" alt="Showu Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Showu</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sample Design Card 6 - Fjord - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/fjord" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=300&fit=crop&auto=format&q=75" alt="Fjord Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Fjord</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sample Design Card 7 - Nextfolio - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/nextfolio" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="700">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=400&h=300&fit=crop&auto=format&q=75" alt="Nextfolio Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Nextfolio</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sample Design Card 8 - Invstor X - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/invstor-x" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="800">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&auto=format&q=75" alt="Invstor X Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Invstor X</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sample Design Card 9 - Portfolio Pro - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/portfolio-pro" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="900">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=face&auto=format&q=75" alt="Portfolio Pro Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Portfolio Pro</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sample Design Card 10 - Business Suite - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/business-suite" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616c9c0e8e3?w=400&h=300&fit=crop&crop=face&auto=format&q=75" alt="Business Suite Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Business Suite</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sample Design Card 11 - Creative Hub - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/creative-hub" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="1100">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=300&fit=crop&crop=face&auto=format&q=75" alt="Creative Hub Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Creative Hub</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sample Design Card 12 - Minimal Blog - MODIFY THE HREF LINK BELOW -->
+                <a href="https://example.com/templates/minimal-blog" target="_blank" class="template-card-link">
+                    <div class="template-card" data-aos="fade-up" data-aos-delay="1200">
+                        <div class="template-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=300&fit=crop&crop=face&auto=format&q=75" alt="Minimal Blog Template" loading="lazy" decoding="async" width="400" height="300">
+                            <div class="template-overlay">
+                                <div class="preview-btn">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h3 class="template-title">Minimal Blog</h3>
+                            <div class="template-meta">
+                                <span class="template-type">Sample Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="load-more-btn">
+                    <span>Load More Sample Designs</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-title">About AppLoom</h2>
+                    <p class="about-description">
+                        AppLoom specializes in creating professional landing page websites that convert visitors into customers. 
+                        We provide comprehensive web development services, from concept to launch, helping businesses establish 
+                        a powerful online presence with high-converting landing pages.
+                    </p>
+                    <p class="about-description">
+                        Our expert team crafts custom landing page solutions tailored to your business needs. Whether you need 
+                        a product launch page, lead generation site, or promotional campaign landing page, we deliver responsive, 
+                        fast-loading websites optimized for maximum conversions and user engagement.
+                    </p>
+                       
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Landing Pages Created</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20K+</span>
+                            <span class="stat-label">Visitors Converted</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1K+</span>
+                            <span class="stat-label">Successful Campaigns</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Development Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-video">
+                    <video id="aboutVideo" poster="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&auto=format&q=75" preload="none" loading="lazy">
+                        <source src="./images/vid.mp4" type="video/mp4">
+                        
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay" id="videoOverlay">
+                        <div class="play-button" id="playButton">
+                            <i class="fas fa-play-circle" id="playIcon"></i>
+                            <span>Watch Our Story</span>
+                        </div>
+                    </div>
+                    <div class="video-controls" id="videoControls">
+                        <button class="control-btn pause-btn" id="pauseButton">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                        </div>
+                        <div class="time-display" id="timeDisplay">0:00 / 0:00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-features">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Responsive Design</h3>
+                        <p class="feature-description">All templates are fully responsive and mobile-friendly</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Clean Code</h3>
+                        <p class="feature-description">Well-structured, semantic HTML5 and CSS3 code</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Fast Loading</h3>
+                        <p class="feature-description">Optimized for speed and performance</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Modern Design</h3>
+                        <p class="feature-description">Contemporary designs following latest trends</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <!-- <section class="newsletter-section">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Stay Updated</h2>
+                <p class="newsletter-subtitle">Get the latest design trends and premium templates delivered to your inbox</p>
+                
+                <form class="newsletter-form" action="https://formspree.io/f/mblzdqvw" method="POST">
+                    <div class="form-group">
+                        <input type="email" name="email" class="newsletter-input" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="newsletter-disclaimer">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Top -->
+                <div class="footer-top">
+                    <div class="footer-section">
+                         <!-- Logo -->
+                            <div class="logo-container">
+                                <div class="logo">
+                                    <div class="logo-icon">
+                                        <img src="./images/24.png" alt="Logo" >
+                                    </div>
+                                </div>
+                            </div>
+                        <p class="footer-description">
+                            Premium Bootstrap sample designs and themes for your next project. High-quality, responsive designs 
+                            built with the latest web technologies.
+            <!-- <section class="newsletter-section">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Stay Updated</h2>
+                <p class="newsletter-subtitle">Get the latest design trends and premium templates delivered to your inbox</p>
+                
+                <form class="newsletter-form" action="https://formspree.io/f/mblzdqvw" method="POST">
+                    <div class="form-group">
+                        <input type="email" name="email" class="newsletter-input" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="newsletter-disclaimer">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+        </div>
+    </section>            </p> -->
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-title">Categories</h4>
+                        <ul class="footer-links">
+                            <!-- <li><a href="#">Landing pages</a></li> -->
+                            <li><a href="#">Bootstrap </a></li>
+                            <li><a href="#">Material UI</a></li>
+                            <li><a href="#">Tailwind CSS</a></li>
+                            <!-- <li><a href="#">eCommerce</a></li> -->
+                            <li><a href="#">Landing Pages</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="footer-section">
+                        <h4 class="footer-title">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Free Sample Designs</a></li>
+                            <li><a href="#">Premium Sample Designs</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div> -->
+
+                    <div class="footer-section">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">License</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="footer-section">
+                        <h4 class="footer-title">Newsletter</h4>
+                        <p class="newsletter-text">Subscribe to get updates on new sample designs and resources.</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input">
+                            <button type="submit" class="newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="footer-bottom-left">
+                        <p>&copy; 2025 AppLoom. All rights reserved.</p>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <div class="payment-methods">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-stripe"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-content">
+            <nav class="mobile-nav">
+                <a href="#" class="mobile-nav-link">Product</a>
+                <a href="#" class="mobile-nav-link">Teams</a>
+                <a href="#" class="mobile-nav-link">Resources</a>
+                <a href="#" class="mobile-nav-link">Community</a>
+                <a href="#" class="mobile-nav-link">Help</a>
+                <a href="#" class="mobile-nav-link">Enterprise</a>
+                <a href="#" class="mobile-nav-link">Pricing</a>
+            </nav>
+            <div class="mobile-secondary-nav">
+                <a href="#templates" class="mobile-secondary-link active">Sample Designs</a>
+                <a href="#about" class="mobile-secondary-link">About Us</a>
+                <a href="#contact" class="mobile-secondary-link">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AOS Animation Library - Load asynchronously -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></noscript>
+    
+    <!-- Scripts at bottom for better performance -->
+    <script>
+        // Inline critical JavaScript for immediate functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle - critical functionality
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+            
+            if (mobileMenuToggle && mobileNavOverlay) {
+                mobileMenuToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    mobileNavOverlay.classList.toggle('active');
+                    mobileMenuToggle.classList.toggle('active');
+                    document.body.style.overflow = mobileNavOverlay.classList.contains('active') ? 'hidden' : '';
+                });
+                
+                mobileNavOverlay.addEventListener('click', function(e) {
+                    if (e.target === mobileNavOverlay) {
+                        mobileNavOverlay.classList.remove('active');
+                        mobileMenuToggle.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+        });
+    </script>
+    
+    <!-- Load AOS library asynchronously -->
+    <script>
+        function loadAOS() {
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+            script.onload = function() {
+                if (typeof AOS !== 'undefined') {
+                    AOS.init({
+                        duration: 600,
+                        easing: 'ease-out-cubic',
+                        once: true,
+                        offset: 50,
+                        delay: 0,
+                    });
+                }
+            };
+            document.head.appendChild(script);
+        }
+        
+        // Load AOS after page load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(loadAOS, 100);
+            });
+        } else {
+            setTimeout(loadAOS, 100);
+        }
+    </script>
+    
+    <!-- Load main script synchronously to ensure functionality works -->
+    <script src="./js/script.js"></script>
+    
+    <!-- Load video pause control script -->
+    <script src="./js/video-pause-control.js"></script>
+</body>
+</html>
