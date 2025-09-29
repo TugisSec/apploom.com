@@ -51,6 +51,18 @@
 /* ===================================
    CSS RESET & BASE STYLES
    =================================== */
+button {
+  outline: none;
+  
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -286,13 +298,21 @@ body {
   padding: 1.6rem 3.7rem;
 }
 
+.explore-btn,
+.explore-btn:focus,
 .explore-btn:active {
-  transform: translateY(0);
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
 }
 
-.explore-btn:focus {
-  outline: none;
-  box-shadow: var(--shadow-xl), 0 0 0 3px rgba(99, 102, 241, 0.3);
+.explore-btn:active {
+  transform: translateY(0);
 }
 
 .btn-text {
